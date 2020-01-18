@@ -23,5 +23,18 @@ int main() {
         	printf("koefisien dari pangkat ke %d= ", i);
         	scanf("%d", &angka[i]);
         }
+        
+        for(i=0; i <= p; i=i+1)
+        {
+        	angka[i] = i * angka[i];
+        	o = i - 1;
+        	if(i>0 && angka[i]>=0) {
+        		printf(" +%dx^%d", angka[i], o);
+        	}
+        	else {
+        	    printf(" %dx^%d", angka[i], o);
+        	}
+        }
+    }
     return 0;
 }
